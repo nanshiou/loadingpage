@@ -347,4 +347,19 @@ html, body {
   .btn-android, .btn-ios {
     display: none;
   }
+}
+
+@media (max-width: 568px) {
+  .pc-btn-android {
+    display: none;
+  }
+}
+
+.mob-btn-android {
+  display: none;
+}
+@media (max-width: 568px) {
+  .mob-btn-android {
+    display: flex;
+  }
 }/*# sourceMappingURL=theme.css.map */
