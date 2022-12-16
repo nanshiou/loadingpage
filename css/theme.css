@@ -342,4 +342,9 @@ html, body {
   display: flex;
   align-items: center;
   text-align: left;
+}
+@media (max-width: 568px) {
+  .btn-android, .btn-ios {
+    display: none;
+  }
 }/*# sourceMappingURL=theme.css.map */

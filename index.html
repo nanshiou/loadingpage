@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/theme.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <script src="js/jquery-3.6.2.js"></script>
 
     <title>FUNSGIRL.CC | 放肆阁楼 |免费高清AV在线看 | A片看到饱</title>
 </head>
@@ -62,7 +64,7 @@
                 <div class="right">
                     <ul class="btn-group">
                         <li class="btn-item">
-                            <a href="http://funsgirls.com/upload/files/funsgirl.apk" class="btn btn-android" target="_blank">
+                            <a href="http://funsgirls.com/upload/files/funsgirl.apk" class="btn btn-android" target="_blank" onclick="downApp()">
                                 <i class="icon-android"></i>
                                 <div class="text">
                                     <h6>安卓下载</h6>
@@ -76,7 +78,7 @@
                             </div> 
                         </li>
                         <li class="btn-item">
-                            <a href="https://www.qunlianmianqian.com:12876/qES169" class="btn btn-ios" target="_blank">
+                            <a href="https://www.qunlianmianqian.com:12876/qES169" class="btn btn-ios" target="_blank" onclick="downApp()">
                                 <i class="icon-ios"></i>
                                 <div class="text">
                                     <h6>苹果下载</h6>
@@ -93,10 +95,28 @@
                 </div>                
             </div>
             <div class="copyright"><p>Copyright©2021.All Rights Reserved.</p></div>
-
         </div>
     </div>
 
-</body>
+    <script>
+        function downApp(){
+            var u = navigator.userAgent,
+                isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1,
+                isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                urls = {
+                    // 
+                };
 
+            //簡化
+            if(isAndroid){
+                $('.btn-android').css("display", "flex");
+            }else if(isiOS){
+                $('.btn-ios').css("display", "flex");
+            }
+        }
+        downApp();
+
+    </script>
+
+</body>
 </html>
