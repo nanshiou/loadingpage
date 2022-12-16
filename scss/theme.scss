@@ -53,7 +53,7 @@ h1, h2, .h3, h4, h5, h6{
 }
 body{
     line-height: 1.5;
-    background: #170E30;
+    background: #fff;
     font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
 }
 html, body {
@@ -112,11 +112,18 @@ $screenwidth: 750;
         height: 56px;
     }
 }
-.server-box{
+.mob-server-box,.server-box{
     display: flex;
     align-items: center;
+    @media (max-width:568px) {
+        justify-content: center;
+        margin-top: 1em;
+    }
     span{
         color: #666;
+        @media (max-width:568px) {
+            color: #fff;
+        }
     }
     .serverLink{
         width: 2rem;
@@ -124,6 +131,17 @@ $screenwidth: 750;
         img{
             max-width: 100%;
         }
+    }
+}
+.mob-server-box{
+    display: none;
+    @media (max-width:568px) {
+        display: flex;
+    }
+}
+.server-box{
+    @media (max-width:568px) {
+        display: none;
     }
 }
 

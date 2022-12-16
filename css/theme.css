@@ -117,19 +117,45 @@ html, body {
   height: 56px;
 }
 
-.server-box {
+.mob-server-box, .server-box {
   display: flex;
   align-items: center;
 }
-.server-box span {
+@media (max-width: 568px) {
+  .mob-server-box, .server-box {
+    justify-content: center;
+    margin-top: 1em;
+  }
+}
+.mob-server-box span, .server-box span {
   color: #666;
 }
-.server-box .serverLink {
+@media (max-width: 568px) {
+  .mob-server-box span, .server-box span {
+    color: #fff;
+  }
+}
+.mob-server-box .serverLink, .server-box .serverLink {
   width: 2rem;
   height: 2rem;
 }
-.server-box .serverLink img {
+.mob-server-box .serverLink img, .server-box .serverLink img {
   max-width: 100%;
+}
+
+.mob-server-box {
+  display: none;
+}
+@media (max-width: 568px) {
+  .mob-server-box {
+    display: flex;
+  }
+}
+
+@media (max-width: 568px) {
+  .server-box {
+    display: none;
+  }
 }
 
 .content {
