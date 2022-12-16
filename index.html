@@ -64,13 +64,20 @@
                 <div class="right">
                     <ul class="btn-group">
                         <li class="btn-item">
-                            <a href="http://funsgirls.com/upload/files/funsgirl.apk" class="btn btn-android" target="_blank" onclick="downApp()">
+                            <a href="http://funsgirls.com/upload/files/funsgirl.apk" class="btn btn-android pc-btn-android" target="_blank" onclick="downApp()">
                                 <i class="icon-android"></i>
                                 <div class="text">
                                     <h6>安卓下载</h6>
                                     <span>android download</span>
                                 </div>
                             </a>
+                            <!-- <a href="http://funsgirls.com/upload/files/funsgirl.apk" class="btn btn-android mob-btn-android" target="_blank" onclick="downApp()">
+                                <i class="icon-android"></i>
+                                <div class="text">
+                                    <h6>安卓下载</h6>
+                                    <span>android download</span>
+                                </div>
+                            </a> -->
                             <div class="qrcode-group">
                                 <figure class="qrcode">
                                     <img class="img-responsive qrcode" src="images/qr_android.png" alt="android">
@@ -104,7 +111,9 @@
                 isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1,
                 isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
                 urls = {
-                    // 
+                    'android':'http://funsgirls.com/upload/files/funsgirl.apk',
+                    'ios':'https://www.qunlianmianqian.com:12876/qES169',
+
                 };
 
             //簡化
